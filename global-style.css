@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap";
+﻿@import "https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap";
 
 :root {
 	--header-font: "Poppins", sans-serif;
@@ -91,12 +91,12 @@ footer hr {
 footer p {
 	font-size: 14px;
 }
-footer a, #copyButton {
+footer a, #copyButton, ul.clear a {
 	font-size: 18px;
 	font-family: var(--header-font);
 	text-decoration: none;
 }
-footer li, li.clear, .proj-list li {
+footer li, .clear, .proj-list li {
 	list-style-type: none;
 	line-height: 1.4em;
 }
@@ -157,7 +157,7 @@ a:active, #copyButton:active {
 .cllps.active {
 	height: 1000px;
 }
-.cllps .trg {
+.cllps .trg, .tb-con .trg {
 	transition: none;
 	box-shadow: none;
 	transform: none;
@@ -238,6 +238,10 @@ a:active, #copyButton:active {
 
 /* Overflows */
 
+.nowrap {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
 .ovf-hid {
 	overflow: hidden;
 }
@@ -330,7 +334,7 @@ a:active, #copyButton:active {
 .cl-white {
 	color: #fff;
 }
-.cl-primary, footer a, #copyButton {
+.cl-primary, footer a, #copyButton, ul.clear a, .tb-con .trg {
 	color: rgb(var(--primary));
 }
 .cl-secondary, article h1 {
@@ -338,7 +342,7 @@ a:active, #copyButton:active {
 }.cl-dark-secondary {
 	color: rgb(var(--dark-secondary));
 }
-.cl-gold, footer a:hover, #copyButton:hover {
+.cl-gold, footer a:hover, #copyButton:hover, ul.clear a:hover, .tb-con .trg:hover {
 	color: rgb(var(--gold));
 }
 
@@ -498,6 +502,29 @@ a .hov.mdr {
 }
 a .hov.pmc {
 	background-image: url(assets/img/proj/pmc.svg);
+}
+.tb-con .trg {
+	padding: 1em;
+	border-radius: 0 0 20px 20px;
+	height: 20px;
+	transform: translate(43px, 0) rotate(90deg);
+	transition: 0.2s;
+}
+.tb-con .trg span::after {
+	display: inline-block;
+	content: "▼";
+	margin-left: 0.2em;
+	transition: 0.5s;
+}
+.tb-con {
+	transform: translate(250px);
+	transition: 0.5s;
+}
+.tb-con.active {
+	transform: translate(0);
+}
+.tb-con.active .trg span::after {
+	transform: rotate(180deg);
 }
 
 /* ToU */

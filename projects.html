@@ -23,13 +23,13 @@
 					<rect y="100.4" width="145.5" height="25.1" rx="12.5" ry="12.5" fill="#fff"/>
 				</svg>
 				<div class="pos-rel dis-flex hor-even ver-icenter" style="top: -60px;">
-					<a href="index.html" class="circle dis-flex hor-center ver-icenter wh-45px">
+					<a href="index" class="circle dis-flex hor-center ver-icenter wh-45px">
 						<svg style="width: 30px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 29" version="1.1">
 							<path style="stroke:none;fill-rule:nonzero;fill:#fff;fill-opacity:1;" d="M31.964844 14.859375 C31.964844 15.628906 31.328125 16.25 30.542969 16.25 L27.914062 16.25 L27.914062 26.820312 C27.914062 28.027344 26.632812 29 25.070312 29 L20.570312 29 L20.570312 19.03125 L11.570312 19.03125 L11.570312 29 L7.070312 29 C5.507812 29 4.230469 28.027344 4.230469 26.820312 L4.230469 16.25 L1.457031 16.25 C1.074219 16.25 0.707031 16.101562 0.4375 15.832031 C0.167969 15.570312 0.0195312 15.214844 0.0234375 14.84375 C0.0273438 14.472656 0.1875 14.117188 0.460938 13.863281 L15.027344 0.394531 C15.570312 -0.117188 16.429688 -0.117188 16.972656 0.394531 L31.539062 13.863281 C31.804688 14.128906 31.960938 14.484375 31.964844 14.859375 Z M31.964844 14.859375"/>
 						</svg>
 						<div class="tooltip cl-white">Intro</div>
 					</a>
-					<a href="about.html" class="circle dis-flex hor-center ver-icenter wh-45px">
+					<a href="about" class="circle dis-flex hor-center ver-icenter wh-45px">
 						<svg style="width: 18px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 49" version="1.1">
 							<path style="stroke:none;fill-rule:nonzero;fill:#fff;fill-opacity:1;" d="M16 21.195312 C24.835938 21.195312 32 28.265625 32 36.984375 L32 48.925781 L0 48.925781 L0 36.984375 C0 28.265625 7.164062 21.195312 16 21.195312 Z M16 21.195312 "/>
 							<path style="stroke:none;fill-rule:nonzero;fill:#fff;fill-opacity:1;" d="M26.152344 10.054688 C26.152344 4.519531 21.605469 0.0351562 16 0.0351562 C10.394531 0.0351562 5.847656 4.519531 5.847656 10.054688 C5.847656 15.585938 10.394531 20.070312 16 20.070312 C21.605469 20.070312 26.152344 15.585938 26.152344 10.054688 Z M26.152344 10.054688"/>
@@ -43,7 +43,7 @@
 						</svg>
 						<div class="tooltip cl-gold">Projects</div>
 					</div>
-					<a href="tou.html" class="circle dis-flex hor-center ver-icenter wh-45px">
+					<a href="tou" class="circle dis-flex hor-center ver-icenter wh-45px">
 						<svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 45" version="1.1">
 							<path style="stroke:none;fill-rule:nonzero;fill:#fff;fill-opacity:1;" d="M31.53125 32.667969 L20.011719 32.691406 L20.011719 44.101562 L31.582031 32.691406 "/>
 							<path style="stroke:none;fill-rule:nonzero;fill:#fff;fill-opacity:1;" d="M0 0 L0 45 L18.953125 45 L18.953125 31.621094 L32 31.621094 L32 0 Z M23.65625 18.828125 C23.628906 18.972656 23.582031 19.117188 23.558594 19.265625 C22.789062 21.558594 21.285156 23.539062 19.273438 24.90625 C18.246094 25.59375 17.105469 26.09375 15.902344 26.390625 C12.460938 25.390625 9.71875 22.808594 8.542969 19.460938 C8.472656 19.300781 8.414062 19.140625 8.371094 18.972656 C7.949219 17.660156 7.359375 14.691406 8.320312 8.925781 C10.152344 8.902344 11.957031 8.488281 13.613281 7.710938 C14.464844 7.300781 15.265625 6.796875 16 6.203125 C16.722656 6.855469 17.535156 7.40625 18.414062 7.832031 C20.050781 8.628906 21.855469 9.03125 23.679688 9 C24.367188 12.242188 24.359375 15.589844 23.65625 18.828125 Z M23.65625 18.828125 "/>
@@ -60,77 +60,105 @@
 				</div>
 			</nav>
 		</header>
+		<section class="tb-con pos-fix dis-flex ver-icenter fldir-row shadow-filter" style="top: 50%; right: 0; z-index: 10;">
+			<div class="trg bg-secondary dis-flex hor-center ver-icenter pointer">
+				<script src="assets/js/proj-vis.js"></script>
+				<span>Shortcut</span>
+			</div>
+			<div class="content bg-dark-secondary" style="padding-right: 1em; min-height: 200px;">
+				<ul class="clear">
+					<li><a href="#active-prj">Active Projects</a></li>
+					<li><a href="#contr-prj">Contributing Projects</a></li>
+				</ul>
+			</div>
+		</section>
 		<section class="projects dis-flex fldir-column hor-center ver-icenter cl-white txt-center">
 			<h1>See all my projects available</h1>
 			<p>To see my other discontinued projects, please direct to <a href="https://www.planetminecraft.com/member/nainonthen00b1/submissions" target="_blank">Planet Minecraft</a>.</p>
 		</section>
 		<section class="blank bg-primary dis-flex hor-center ovf-hid">
 			<section style="width: 1200px; padding: 1em; animation: fadeScrollUp 1.2s forwards; transition-timing-function: ease-out;">
-				<section class="proj-list dis-flex hor-center wrap hei-auto cl-white" style="margin: 1em 0;">
-					<li><a href="https://modrinth.com/resourcepack/foliage+/" target="_blank"><div class="project-sels dis-flex hor-center ver-icenter">
-						<div class="hov mdr"></div>
-						<img src="assets/img/proj/foliage+.png" loading="lazy" width=100%>
-						<div class="wid-full pos-abs desc content shadow-filter">
-							<h1 class="cl-white" style="margin-left: 0.8em;">Foliage+</h1>
-						</div>
-						<div class="cl-white tag pos-abs" style="top: 5px; right: 10px;">Resource Pack</div>
-					</div></a></li>
-					<li><a href="https://modrinth.com/resourcepack/improved-fences" target="_blank"><div class="project-sels dis-flex hor-center ver-icenter">
-						<div class="hov mdr"></div>
-						<img src="assets/img/proj/improved-fences.png" loading="lazy" width=100%>
-						<div class="wid-full pos-abs desc content">
-							<h1 class="cl-white" style="margin-left: 0.8em;">Improved Fences</h1>
-						</div>
-						<div class="cl-white tag pos-abs" style="top: 5px; right: 10px;">Resource Pack</div>
-					</div></a></li>
-					<li><a href="https://www.planetminecraft.com/texture-pack/foliage-lite/" target="_blank"><div class="project-sels dis-flex hor-center ver-icenter">
-						<div class="hov pmc"></div>
-						<img src="assets/img/proj/foliage+-lite.png" loading="lazy" width=100%>
-						<div class="wid-full pos-abs desc content">
-							<h1 class="cl-white" style="margin-left: 0.8em;">Foliage+ Lite</h1>
-						</div>
-						<div class="cl-white tag pos-abs" style="top: 5px; right: 10px;">Resource Pack</div>
-					</div></a></li>
-					<li><a href="https://www.planetminecraft.com/texture-pack/cobweb-v1-0-1-14-1-18/" target="_blank"><div class="project-sels dis-flex hor-center ver-icenter">
-						<div class="hov pmc"></div>
-						<img src="assets/img/proj/cobweb+.png" loading="lazy" width=100%>
-						<div class="wid-full pos-abs desc content">
-							<h1 class="cl-white" style="margin-left: 0.8em;">Cobweb+</h1>
-						</div>
-						<div class="cl-white tag pos-abs" style="top: 5px; right: 10px;">Resource Pack</div>
-					</div></a></li>
-					<li><a href="https://modrinth.com/resourcepack/foliage+-tweaks/" target="_blank"><div class="project-sels dis-flex hor-center ver-icenter">
-						<div class="hov mdr"></div>
-						<img src="assets/img/proj/foliage+-tweaks.png" loading="lazy" width=100%>
-						<div class="wid-full pos-abs desc content">
-							<h1 class="cl-white" style="margin-left: 0.8em;">Foliage+ Tweaks</h1>
-						</div>
-						<div class="cl-white tag pos-abs" style="top: 5px; right: 10px;">Resource Pack</div>
-					</div></a></li>
-					<li><a href="https://modrinth.com/resourcepack/bhi/" target="_blank"><div class="project-sels dis-flex hor-center ver-icenter">
-						<div class="hov mdr"></div>
-						<img src="assets/img/proj/bhi.png" loading="lazy" width=100%>
-						<div class="wid-full pos-abs desc content">
-							<h1 class="cl-white" style="margin-left: 0.8em; font-size: 28px;">Block Hitboxes Indicator</h1>
-						</div>
-						<div class="cl-white tag pos-abs" style="top: 5px; right: 10px;">Resource Pack</div>
-					</div></a></li>
-					<li><a href="https://www.planetminecraft.com/texture-pack/ebe-sign-v1-0-1-14-1-19/" target="_blank"><div class="project-sels dis-flex hor-center ver-icenter">
-						<div class="hov pmc"></div>
-						<img src="assets/img/proj/sign+.png" loading="lazy" width=100%>
-						<div class="wid-full pos-abs desc content">
-							<h1 class="cl-white" style="margin-left: 0.8em;">Sign+</h1>
-						</div>
-						<div class="cl-white tag pos-abs" style="top: 5px; right: 10px;">Resource Pack</div>
-					</div></a></li>
-					<li><a href="https://modrinth.com/resourcepack/simply-bushier" target="_blank"><div class="project-sels dis-flex hor-center ver-icenter">
-						<div class="hov mdr"></div>
-						<img src="assets/img/proj/simply-bushier.png" loading="lazy" width=100%>
-						<div class="wid-full pos-abs desc content">
-							<h1 class="cl-white" style="margin-left: 0.8em;">Simply Bushier</h1>
-						</div>
-						<div class="cl-white tag pos-abs" style="top: 5px; right: 10px;">Resource Pack</div>
-					</div></a></li>
+				<section class="active proj-list dis-flex hor-center fldir-column hei-auto cl-white" style="margin: 1em 0;">
+					<h1 class="txt-center cl-dark-secondary border-bottom" id="active-prj">Active Projects</h1>
+					<section class="dis-flex hor-center wrap">
+						<li><a href="https://modrinth.com/resourcepack/foliage+/" target="_blank"><div class="project-sels dis-flex hor-center ver-icenter">
+							<div class="hov mdr"></div>
+							<img src="assets/img/proj/foliage+.png" loading="lazy" width=100%>
+							<div class="wid-full pos-abs desc content shadow-filter">
+								<h1 class="cl-white" style="margin-left: 0.8em;">Foliage+</h1>
+							</div>
+							<div class="cl-white tag pos-abs" style="top: 5px; right: 10px;">Resource Pack</div>
+						</div></a></li>
+						<li><a href="https://modrinth.com/resourcepack/improved-fences" target="_blank"><div class="project-sels dis-flex hor-center ver-icenter">
+							<div class="hov mdr"></div>
+							<img src="assets/img/proj/improved-fences.png" loading="lazy" width=100%>
+							<div class="wid-full pos-abs desc content">
+								<h1 class="cl-white" style="margin-left: 0.8em;">Improved Fences</h1>
+							</div>
+							<div class="cl-white tag pos-abs" style="top: 5px; right: 10px;">Resource Pack</div>
+						</div></a></li>
+						<li><a href="https://www.planetminecraft.com/texture-pack/foliage-lite/" target="_blank"><div class="project-sels dis-flex hor-center ver-icenter">
+							<div class="hov pmc"></div>
+							<img src="assets/img/proj/foliage+-lite.png" loading="lazy" width=100%>
+							<div class="wid-full pos-abs desc content">
+								<h1 class="cl-white" style="margin-left: 0.8em;">Foliage+ Lite</h1>
+							</div>
+							<div class="cl-white tag pos-abs" style="top: 5px; right: 10px;">Resource Pack</div>
+						</div></a></li>
+						<li><a href="https://www.planetminecraft.com/texture-pack/cobweb-v1-0-1-14-1-18/" target="_blank"><div class="project-sels dis-flex hor-center ver-icenter">
+							<div class="hov pmc"></div>
+							<img src="assets/img/proj/cobweb+.png" loading="lazy" width=100%>
+							<div class="wid-full pos-abs desc content">
+								<h1 class="cl-white" style="margin-left: 0.8em;">Cobweb+</h1>
+							</div>
+							<div class="cl-white tag pos-abs" style="top: 5px; right: 10px;">Resource Pack</div>
+						</div></a></li>
+						<li><a href="https://modrinth.com/resourcepack/foliage+-tweaks/" target="_blank"><div class="project-sels dis-flex hor-center ver-icenter">
+							<div class="hov mdr"></div>
+							<img src="assets/img/proj/foliage+-tweaks.png" loading="lazy" width=100%>
+							<div class="wid-full pos-abs desc content">
+								<h1 class="cl-white" style="margin-left: 0.8em;">Foliage+ Tweaks</h1>
+							</div>
+							<div class="cl-white tag pos-abs" style="top: 5px; right: 10px;">Resource Pack</div>
+						</div></a></li>
+						<li><a href="https://modrinth.com/resourcepack/bhi/" target="_blank"><div class="project-sels dis-flex hor-center ver-icenter">
+							<div class="hov mdr"></div>
+							<img src="assets/img/proj/bhi.png" loading="lazy" width=100%>
+							<div class="wid-full pos-abs desc content">
+								<h1 class="cl-white" style="margin-left: 0.8em;"><marquee behavior="alternate" scrollamount="1" width="95%">Block Hitboxes Indicator</marquee></h1>
+							</div>
+							<div class="cl-white tag pos-abs" style="top: 5px; right: 10px;">Resource Pack</div>
+						</div></a></li>
+						<li><a href="https://www.planetminecraft.com/texture-pack/ebe-sign-v1-0-1-14-1-19/" target="_blank"><div class="project-sels dis-flex hor-center ver-icenter">
+							<div class="hov pmc"></div>
+							<img src="assets/img/proj/sign+.png" loading="lazy" width=100%>
+							<div class="wid-full pos-abs desc content">
+								<h1 class="cl-white" style="margin-left: 0.8em;">Sign+</h1>
+							</div>
+							<div class="cl-white tag pos-abs" style="top: 5px; right: 10px;">Resource Pack</div>
+						</div></a></li>
+						<li><a href="https://modrinth.com/resourcepack/simply-bushier" target="_blank"><div class="project-sels dis-flex hor-center ver-icenter">
+							<div class="hov mdr"></div>
+							<img src="assets/img/proj/simply-bushier.png" loading="lazy" width=100%>
+							<div class="wid-full pos-abs desc content">
+								<h1 class="cl-white" style="margin-left: 0.8em;">Simply Bushier</h1>
+							</div>
+							<div class="cl-white tag pos-abs" style="top: 5px; right: 10px;">Resource Pack</div>
+						</div></a></li>
+					</section>
+				</section>
+				<section class="proj-list dis-flex hor-center fldir-column hei-auto cl-white" style="margin: 1em 0;">
+					<h1 class="txt-center cl-dark-secondary border-bottom" id="contr-prj">Contributing Projects</h1>
+					<section class="dis-flex hor-center wrap">
+						<li><a href="https://modrinth.com/resourcepack/bushy-leaves-for-faithful-32x/" target="_blank"><div class="project-sels dis-flex hor-center ver-icenter">
+							<div class="hov mdr"></div>
+							<img src="assets/img/proj/faithful-bushy-leaves.png" loading="lazy" width=100%>
+							<div class="wid-full pos-abs desc content shadow-filter">
+								<h1 class="cl-white" style="margin-left: 0.8em;"><marquee behavior="alternate" scrollamount="1" width="95%">Bushy Leaves for Faithful 32x</marquee></h1>
+							</div>
+							<div class="cl-white tag pos-abs" style="top: 5px; right: 10px;">Resource Pack</div>
+						</div></a></li>
+					</section>
 				</section>
 			</section>
 		</section>
@@ -138,7 +166,7 @@
 		<footer class="pos-rel bg-secondary cl-primary" style="padding: 1em; clear: both;">
 			<p class="txt-center">You're here! Cool!</p>
 			<div class="wid-40 column-left txt-right">
-				<li><a href="intro">Intro</a></li>
+				<li><a href="index">Intro</a></li>
 				<li><a href="about">About</a></li>
 				<li><a href="projects">Projects</a></li>
 				<li><a href="tou">Terms of Use</a></li>
