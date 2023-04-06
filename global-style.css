@@ -441,10 +441,10 @@ a:active.kofi.shadowfil {
 /* About */
 
 .about-bg {
-	background-image: url("assets/bg/landscape.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
+	background: url("assets/bg/landscape.jpg");
+	background-size: calc(100vw * 1.2);
+	z-index: -1;
+	opacity: 0.6; 
 }
 .about-header {
 	height: 27rem;
