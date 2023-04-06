@@ -600,9 +600,9 @@ a .hov.pmc {
 		display: none;
 	}
 }
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1590px) {
 	.about-bg {
-		background-size: 1644px;
+		background-size: 1908px;
 	}
 }
 @media screen and (max-width: 1000px) {
