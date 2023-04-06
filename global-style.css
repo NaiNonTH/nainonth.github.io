@@ -600,6 +600,11 @@ a .hov.pmc {
 		display: none;
 	}
 }
+@media screen and (max-width: 1370px) {
+	.about-bg {
+		background-size: 1644px;
+	}
+}
 @media screen and (max-width: 1000px) {
 	.box-content, .cllps {
 		width: 100%;
