@@ -1,4 +1,5 @@
 ﻿@import "https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Comfortaa&display=swap";
 
 :root {
 	--header-font: "Poppins", sans-serif;
@@ -12,7 +13,8 @@
 	--red: 225, 15, 15;
 	--light-blue: 49, 181, 247;
 	--dark-cyan: 67, 143, 146;
-	--light-gray: 169, 169, 169
+	--light-gray: 210, 210, 210;
+	--gray: 110, 110, 110;
 	--white: 255, 255, 255;
 	--black: 0, 0, 0;
 
@@ -35,7 +37,7 @@
 }
 html {
 	font-size: 18px;
-	font-family: "comfortaa";
+	font-family: 'Comfortaa', cursive;
 	text-shadow: 1px 1px 2px rgba(var(--black), 0.3);
 }
 body {
@@ -106,11 +108,17 @@ h1, h2 {
 h1 {
 	font-size: 32px;
 }
+section.sub h1 {
+	font-size: 64px;
+}
 h2 {
 	font-size: 24px;
 }
 p {
 	line-height: 1.35em;
+}
+section.sub p {
+	font-size: 24px;
 }
 a, #copyButton {
 	display: inline-block;
@@ -174,6 +182,27 @@ a:active, #copyButton:active {
 	position: absolute;
 	right: 2em;
 	transform: rotate(90deg);
+}
+.notice {
+	position: fixed;
+	z-index: 30;
+	bottom: 30px;
+	right: 15px;
+	border-radius: 70px;
+	padding: 1em;
+	width: 600px;
+	transition: 0.2s;
+}
+.notice::after {
+	content: "";
+	position: absolute;
+	width: 1px;
+	top: 100%;
+	left: 100%;
+	margin-left: -120px;
+	border-width: 19px;
+	border-style: solid;
+	border-color: white transparent transparent transparent;
 }
 
 /* Positions */
@@ -282,6 +311,12 @@ a:active, #copyButton:active {
 .hei-full {
 	height: 100%;
 }
+.wid-auto {
+	width: auto;
+}
+.hei-auto {
+	height: auto;
+}
 .wid-40 {
 	width: 40%;
 }
@@ -331,7 +366,7 @@ a:active, #copyButton:active {
 
 /* Font Color */
 
-.cl-white {
+.cl-white, #close:hover {
 	color: #fff;
 }
 .cl-primary, footer a, #copyButton, ul.clear a, .tb-con .trg {
@@ -371,12 +406,12 @@ a:active, #copyButton:active {
 }
 .box-content {
 	width: 1000px;
-	overflow: hidden;
 	margin-top: 0;
-	padding: 0 2em;
+	padding: 0.75em 2em;
 }
 section.sub {
 	width: 1200px;
+	padding: 3.25em 2em;
 }
 .column-left {
 	float: left;
@@ -426,13 +461,31 @@ a:active.kofi.shadowfil {
 	border-radius: 30px;
 	border: 5px solid #fff;
 }
+#close {
+	margin-top: 1em;
+	padding: 1em;
+	font-size: 16px;
+	font-family: inherit;
+	text-shadow: inherit;
+	background: rgb(var(--light-gray));
+	border: none;
+	border-radius: 40px;
+	transition: 0.2s;
+	cursor: pointer;
+}
+#close:hover {
+	background: rgb(var(--gray));
+}
+.dis-none {
+	animation: disNoneFade 0.2s forwards;
+}
 
 /* Intro */
 
 .starter {
 	padding: 1em;
 	text-align: center;
-	background-image: url("assets/bg/help.png");
+	background: url("assets/bg/help.png");
 	background-size: 900px;
 	height: 700px;
 	animation: starterScroll 60s linear infinite;
@@ -453,7 +506,7 @@ a:active.kofi.shadowfil {
 	font-size: 16px;
 	width: auto;
 	height: auto;
-	padding: 0.5em;
+	padding: 0.75em;
 }
 
 /* Projects */
@@ -569,17 +622,25 @@ a .hov.pmc {
 		transform: translate(0);
 	}
 }
-@keyframes movingLeftToRight {
-	from {
-		transform: translate(3px, 0)
+@keyframes disNoneFade {
+	0% {
+		transform: translate(0);
+		opacity: 1;
 	}
-	to {
-		transform: translate(-1px, 0)
+	100% {
+		transform: translate(0, 50px);
+		opacity: 0;
+		visibility: hidden;
 	}
 }
 
 /* Media */
 
+@media screen and (max-width: 1590px) {
+	.about-bg {
+		background-size: 1908px;
+	}
+}
 @media screen and (max-width: 1200px) {
 	section.sub {
 		width: 100%;
@@ -600,14 +661,12 @@ a .hov.pmc {
 		display: none;
 	}
 }
-@media screen and (max-width: 1590px) {
-	.about-bg {
-		background-size: 1908px;
-	}
-}
-@media screen and (max-width: 1000px) {
-	.box-content, .cllps {
+@media screen and (max-width: 630px) {
+	.notice {
 		width: 100%;
+		bottom: 0;
+		right: 0;
+		border-radius: 0;
 	}
 }
 @media screen and (max-width: 600px) {
@@ -621,5 +680,16 @@ a .hov.pmc {
 @media screen and (max-width: 500px) {
 	nav {
 		width: 100%;
+	}
+}
+@media screen and (max-width: 420px) {
+	section.sub {
+		padding: 3.5em 1em;
+	}
+	section.sub h1 {
+		font-size: 52px;
+	}
+	section.sub p {
+		font-size: 20px;;
 	}
 }
