@@ -516,6 +516,7 @@ a:active.kofi.shadowfil {
 
 .projects {
 	background-image: url("assets/bg/village.jpg");
+	background-size: 2000px;
 	background-position-y: 700px;
 	height: 400px;
 }
