@@ -330,6 +330,9 @@ a:active, #copyButton:active {
 .bg-norep {
 	background-repeat: no-repeat;
 }
+.bg-stllprl {
+	background-attachment: fixed;
+}
 .bg-pos-center {
 	background-position: fixed;
 }
@@ -337,28 +340,28 @@ a:active, #copyButton:active {
 	background-size: cover;
 }
 .bg-primary {
-	background: rgb(var(--primary));
+	background-color: rgb(var(--primary));
 }
 .bg-secondary {
-	background: rgb(var(--secondary));
+	background-color: rgb(var(--secondary));
 }
 .bg-dark-secondary {
-	background: rgb(var(--dark-secondary));
+	background-color: rgb(var(--dark-secondary));
 }
 .bg-light-gray {
-	background: rgb(var(--light-gray));
+	background-color: rgb(var(--light-gray));
 }
 .bg-light-red {
-	background: rgb(var(--light-red));
+	background-color: rgb(var(--light-red));
 }
 .bg-pink {
-	background: rgb(var(--pink));
+	background-color: rgb(var(--pink));
 }
 .bg-white {
-	background: #fff;
+	background-color: #fff;
 }
 .bg-black {
-	background: #000;
+	background-color: #000;
 }
 .bg-none {
 	background: transparent;
@@ -512,7 +515,8 @@ a:active.kofi.shadowfil {
 /* Projects */
 
 .projects {
-	background: black;
+	background-image: url("assets/bg/village.jpg");
+	background-position-y: 700px;
 	height: 400px;
 }
 .project-sels {
@@ -525,6 +529,7 @@ a:active.kofi.shadowfil {
 }
 .project-sels .desc {
 	bottom: 0;
+	padding: 1.5em 0;
 	height: 100px;
 	background-image: linear-gradient(transparent, rgba(var(--black), 0.9));
 }
@@ -558,20 +563,38 @@ a .hov.pmc {
 }
 .tb-con .trg {
 	padding: 1em;
-	border-radius: 0 0 20px 20px;
+	border-radius: 20px 20px 0 0;
 	height: 20px;
-	transform: translate(43px, 0) rotate(90deg);
 	transition: 0.2s;
 }
 .tb-con .trg span::after {
 	display: inline-block;
-	content: "▼";
+	content: "▲";
 	margin-left: 0.2em;
-	transition: 0.5s;
+	transition: transform 0.5s;
+}
+.tb-con .content {
+	width: 300px;
+	padding: 0 1em;
+	border-radius: 20px 20px 0 0;
 }
 .tb-con {
-	transform: translate(250px);
-	transition: 0.5s;
+	bottom: 0;
+	left: 50%;
+	margin-left: -167px;
+	transform: translate(0, 118px);
+	z-index: 10;
+	transition: 0.35s;
+}
+.tb-con a {
+	width: 90%;
+	padding: 0.3em;
+	margin: 0.0556em 0;
+	border-radius: 10px;
+}
+.tb-con a:hover {
+	transform: translate(0);
+	background:rgba(var(--white), 0.2);
 }
 .tb-con.active {
 	transform: translate(0);
