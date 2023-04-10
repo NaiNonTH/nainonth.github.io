@@ -71,13 +71,15 @@ nav a:hover {
 nav a:active {
 	background: rgb(255, 255, 255, 0.35);
 }
-nav a .tooltip, nav .selected .tooltip {
+.tooltip {
 	position: absolute;
-	top: 102%;
-	font-size: 12px;
 	text-align: center;
+	font-size: 12px;
+}
+nav a .tooltip, nav .selected .tooltip {
 	visibility: hidden;
 	opacity: 0;
+	top: 102%;
 	transition: opacity 0.2s, visibility 0.2s;
 }
 nav a:hover .tooltip, nav.active .selected .tooltip {
@@ -93,19 +95,27 @@ footer hr {
 footer p {
 	font-size: 14px;
 }
-footer a, #copyButton, ul.clear a {
+footer a, #copyButton, .clear a, .transparent a {
 	font-size: 18px;
 	font-family: var(--header-font);
 	text-decoration: none;
 }
-footer li, .clear, .proj-list li {
+footer li, .clear, .transparent, .proj-list li {
 	list-style-type: none;
+}
+ul, ol {
 	line-height: 1.4em;
+}
+.clear {
+	padding-inline-start: 0;
+}
+.numbered {
+	list-style-type: georgian;
 }
 h1, h2 {
 	font-family: var(--header-font);
 }
-h1 {
+h1, section.sub.tou h1 {
 	font-size: 32px;
 }
 section.sub h1 {
@@ -119,6 +129,9 @@ p {
 }
 section.sub p {
 	font-size: 24px;
+}
+section.sub.tou p {
+	font-size: inherit;
 }
 a, #copyButton {
 	display: inline-block;
@@ -209,6 +222,9 @@ a:active, #copyButton:active {
 
 .pos-fix {
 	position: fixed;
+}
+.pos-stk {
+	position: sticky;
 }
 .pos-rel {
 	position: relative;
@@ -317,6 +333,9 @@ a:active, #copyButton:active {
 .hei-auto {
 	height: auto;
 }
+.wid-50 {
+	width: 50%;
+}
 .wid-40 {
 	width: 40%;
 }
@@ -369,10 +388,10 @@ a:active, #copyButton:active {
 
 /* Font Color */
 
-.cl-white, #close:hover {
+.cl-white, #close:hover, table.class th {
 	color: #fff;
 }
-.cl-primary, footer a, #copyButton, ul.clear a, .tb-con .trg {
+.cl-primary, footer a, #copyButton, .clear a, .transparent a, .tb-con .trg {
 	color: rgb(var(--primary));
 }
 .cl-secondary, article h1 {
@@ -380,7 +399,7 @@ a:active, #copyButton:active {
 }.cl-dark-secondary {
 	color: rgb(var(--dark-secondary));
 }
-.cl-gold, footer a:hover, #copyButton:hover, ul.clear a:hover, .tb-con .trg:hover {
+.cl-gold, footer a:hover, #copyButton:hover, .clear a:hover, .transparent a:hover, .tb-con .trg:hover {
 	color: rgb(var(--gold));
 }
 
@@ -482,6 +501,19 @@ a:active.kofi.shadowfil {
 .dis-none {
 	animation: disNoneFade 0.2s forwards;
 }
+#bg-close {
+	bottom: calc(5px - (1vw / -1.2));
+	right: calc(5px - (1vw / -1.2));
+	width: 30px;
+	height: 30px;
+	padding: 0.5em;
+}
+.projects .tooltip {
+	border-radius: 10px 10px 0 10px;
+	bottom: calc(35px - (1vw / -1.2));
+	right: calc(60px - (1vw / -1.2));
+	padding: 0.6em;
+}
 
 /* Intro */
 
@@ -515,7 +547,6 @@ a:active.kofi.shadowfil {
 /* Projects */
 
 .projects {
-	background-image: url("assets/bg/village.jpg");
 	background-size: 2000px;
 	background-position-y: 700px;
 	height: 400px;
@@ -606,11 +637,35 @@ a .hov.pmc {
 
 /* ToU */
 
-.tou {
-	width: 800px;
-	height: 800px;
-	margin: 2rem;
-	border: 2px solid rgb(var(--gold))
+.tou-sel {
+	min-width: 200px;
+}
+table {
+	width: 750px;
+}
+table th {
+	padding: 0 0.75em;
+}
+table.ref th:nth-child(1) {
+	background: #f9cb9c;
+}
+table.ref th:nth-child(2) {
+	background: #f6b26b;
+}
+table.class th:nth-child(1) {
+	background: #45e638;
+}
+table.class th:nth-child(2) {
+	background: red;
+}
+table tr:nth-child(odd) {
+	background: rgba(var(--white), 0.4);
+}
+table tr:nth-child(even) {
+	background: rgba(var(--white), 0.8);
+}
+table td:nth-child(2) {
+	background: rgba(var(--white), 0.2);
 }
 .show-if-mobile {
 	display: none;
