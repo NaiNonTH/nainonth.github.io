@@ -637,6 +637,12 @@ a .hov.pmc {
 
 /* ToU */
 
+.tou {
+	width: 800px;
+	height: 800px;
+	margin: 2rem;
+	border: 2px solid rgb(var(--gold))
+}
 .tou-sel {
 	min-width: 200px;
 }
