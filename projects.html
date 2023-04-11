@@ -10,33 +10,16 @@
 		<link rel="stylesheet" href="global-style.css">
 		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 		<title>Projects | NaiNonTheN00b1</title>
-		<script>
-			var one = document.getElementById("overlay");
-			var two = document.querySelector(".projects");
-			window.addEventListener("scroll", function(){
-				if (window.scrollY >= "300px"){
-					one.style.background = "none";
-					two.style.backgroundImage = "none";
-				}
-				else {
-					one.style.background = "rgba(var(--white), 0.6)";
-					two.style.backgroundImage = "url(assets/bg/village.jpg)";
-				}
-			});
-		</script>
 	</head>
 	<body>
 		<section id="closable" class="notice bg-white dis-flex fldir-column hor-center ver-icenter box-size-border shadow-filter">
 			<img src="assets/img/under-con.svg" class="shadow-filter" alt="Under-Construction" width=160px style="margin-bottom: 1em;">
 			<p class="mar-0 txt-center">This website is still in development. Certain upgrades and improvements can usually be seen.</p>
 			<button id="close" class="shadow">Okay</button>
-			<script src="assets/js/close.js"></script>
 		</section>
 		<div class="bg-secondary pos-fix wid-full shadow-filter" style="height: 0.2rem; top: 0; z-index: 10;"></div>
 		<nav class="pos-fix shadow-filter bg-secondary dis-flex fldir-recolumn cl-white">
-			<div class="avatar trg circle pointer pos-abs" style="width: 80px; height: 80px; bottom: -2rem; left: 50%; margin-left: -40px; z-index: 10;">
-				<script src="assets/js/nav.js"></script>
-			</div>
+			<div class="avatar trg circle pointer pos-abs" style="width: 80px; height: 80px; bottom: -2rem; left: 50%; margin-left: -40px; z-index: 10;"></div>
 			<svg class="pos-abs" style="width: 1.3rem; left: 1rem; bottom: 1rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 145.5 125.5">
 				<rect width="145.5" height="25.1" rx="12.5" ry="12.5" fill="#fff"/>
 				<rect y="50.2" width="145.5" height="25.1" rx="12.5" ry="12.5" fill="#fff"/>
@@ -81,7 +64,6 @@
 		</nav>
 		<section class="tb-con pos-fix dis-flex ver-icenter fldir-column shadow-filter">
 			<div class="trg clear bg-secondary dis-flex hor-center ver-icenter pointer">
-				<script src="assets/js/proj-vis.js"></script>
 				<span>Contents</span>
 			</div>
 			<div class="content bg-dark-secondary txt-center">
@@ -103,23 +85,6 @@
 					<path d="M7183.5,7190.5v18h32v-18Zm1.1,1.1h29.8v15.2l-11.7-12.2-12.3,12.8h-5.8Z" transform="translate(-7183.5 -7190.5)" fill="#fff"/>
 					<circle cx="8" cy="6.3" r="2.7" fill="#fff"/>
 				</svg>
-				<script>
-					var btn = document.getElementById("bg-close");
-					var bg = document.querySelector(".projects");
-					var bg1 = document.getElementById("overlay");
-					var tlt = document.querySelector(".projects .tooltip");
-					btn.onclick = function(){
-						tlt.style.display = "none";
-						if (bg1.style.background === "rgba(var(--white), 0.4)"){
-							bg.style.backgroundImage = "none";
-							bg1.style.background = "none";
-						}
-						else {
-							bg.style.backgroundImage = "url(assets/bg/village.jpg)";
-							bg1.style.background = "rgba(var(--white), 0.4)";
-						}
-					}
-				</script>
 			</a>
 		</section>
 		<section class="blank bg-primary dis-flex hor-center ovf-hid">
@@ -225,11 +190,31 @@
 				<li><a href="https://www.curseforge.com/members/nainonthen00b1/projects">CurseForge</a></li>
 				<li><a href="https://www.planetminecraft.com/member/nainonthen00b1/">PMC</a></li>
 			</div>
-			<script src="assets/js/clicktocopy.js"></script>
 			<hr class="dis-block">
 			<p class="txt-center" style="clear: both; padding-top: 1em;"><strong>&copy; 2023, All Right Reserved | Do not redistribute, unless other specified</strong></p>
 			<p class="txt-center">Created by NaiNonTheN00b1</p>
 		</footer>
-		<footer class="bg-dark-secondary" style="height: 50px;">
+		<footer class="bg-dark-secondary" style="height: 50px;"></footer>
 	</body>
+	<script src="assets/js/close.js"></script>
+	<script src="assets/js/nav.js"></script>
+	<script src="assets/js/proj-vis.js"></script>
+	<script>
+		var btn = document.getElementById("bg-close");
+		var bg = document.querySelector(".projects");
+		var bg1 = document.getElementById("overlay");
+		var tlt = document.querySelector(".projects .tooltip");
+		btn.onclick = function(){
+			tlt.style.display = "none";
+			if (bg1.style.background === "rgba(var(--white), 0.4)"){
+				bg.style.backgroundImage = "none";
+				bg1.style.background = "none";
+			}
+			else {
+				bg.style.backgroundImage = "url(assets/bg/village.jpg)";
+				bg1.style.background = "rgba(var(--white), 0.4)";
+			}
+		}
+	</script>
+	<script src="assets/js/clicktocopy.js"></script>
 </html>
