@@ -46,20 +46,21 @@ body {
 	animation: bodyFade 1s forwards;
 }
 nav {
-	width: 28rem;
-	height: 6rem;
-	left: 50%;
-	margin-left: -14rem;
-	border-radius: 0 0 20px 20px;
-	cursor: default;
-	transform: translate(0, -57px);
-	transition: transform 0.2s;
-	transition-timing-function: ease-in-out;
+	width: 500px;
+	height: 55px;
 	z-index: 69420;
+	top: 10px;
+	left: 50%;
+	margin-left: -236px;
+	border-radius: 30px;
+	cursor: default;
+	transition: 0.2s;
 }
-nav.active {
-	transform: translate(0);
-	transition-timing-function: ease-out;
+.sub-nav {
+	top: 4px;
+	right: -60px;
+	width: 90%;
+	transition: 0.2s;
 }
 nav a {
 	position: relative;
@@ -73,19 +74,28 @@ nav a:active {
 }
 .tooltip {
 	position: absolute;
-	text-align: center;
-	font-size: 12px;
+	font-size: 14px;
 }
 nav a .tooltip, nav .selected .tooltip {
 	visibility: hidden;
-	opacity: 0;
+	overflow: hidden;
+	padding: 0;
+	border-radius: 0 0 10px 10px;
+	background: rgb(var(--secondary));
 	top: 102%;
-	transition: opacity 0.2s, visibility 0.2s;
+	height: 0;
+	transition: 0.15s;
 }
-nav a:hover .tooltip, nav.active .selected .tooltip {
+nav a:hover .tooltip, nav .selected .tooltip {
 	visibility: visible;
-	opacity: 1;
-	transition: opacity 0.2s;
+	padding: 0.6em;
+	height: 14px;
+}
+nav .avatar {
+	width: 100px;
+	height: 100px;
+	left: -25px;
+	transition: 0.2s;
 }
 footer hr {
 	width: 10%;
@@ -488,8 +498,8 @@ a:active.kofi.shadowfil {
 }
 .projects .tooltip {
 	border-radius: 10px 10px 0 10px;
-	bottom: calc(35px - (1vw / -1.2));
-	right: calc(60px - (1vw / -1.2));
+	bottom: calc(35px + (1vw / 1.2));
+	right: calc(60px + (1vw / 1.2));
 	padding: 0.6em;
 }
 
@@ -620,6 +630,7 @@ a .hov.pmc {
 }
 table {
 	width: 750px;
+	transition: 0.4s;
 }
 table th {
 	text-align: center !important;
@@ -752,11 +763,36 @@ table td:nth-child(2) {
 		display: block;
 	}
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 530px) {
+	nav .avatar.circle {
+		width: 80px;
+		height: 80px;
+		border-radius: 0 50% 50% 0;
+		left: 0;
+		top: 0;
+	}
 	nav {
 		width: 100%;
+		border-radius: 0 0 30px 30px;
+		top: 0;
 		left: 0;
 		margin-left: 0;
+	}
+	.sub-nav {
+		right: -60px;
+	}
+}
+@media screen and (max-width: 450px) {
+	nav .avatar {
+		visibility: hidden;
+		transform: translate(-80px, 0);
+	}
+	nav {
+		border-radius: 0;
+	}
+	.sub-nav {
+		width: 100%;
+		right: 0;
 	}
 }
 @media screen and (max-width: 420px) {
