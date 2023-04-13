@@ -184,23 +184,12 @@ a:active, #copyButton:active {
 .notice {
 	position: fixed;
 	z-index: 30;
-	bottom: 30px;
+	bottom: 15px;
 	right: 15px;
 	border-radius: 70px;
 	padding: 1em;
 	width: 600px;
 	transition: 0.2s;
-}
-.notice::after {
-	content: "";
-	position: absolute;
-	width: 1px;
-	top: 100%;
-	left: 100%;
-	margin-left: -120px;
-	border-width: 19px;
-	border-style: solid;
-	border-color: white transparent transparent transparent;
 }
 
 /* Positions */
