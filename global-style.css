@@ -43,7 +43,6 @@ html {
 }
 body {
 	margin: 0;
-	animation: bodyFade 1s forwards;
 }
 nav {
 	width: 500px;
@@ -190,6 +189,11 @@ a:active, #copyButton:active {
 	padding: 1em;
 	width: 600px;
 	transition: 0.2s;
+}
+.notice.dis-none {
+	transform: translate(0, 50px);
+	opacity: 0;
+	visibility: hidden;
 }
 
 /* Positions */
@@ -441,9 +445,6 @@ a:active.kofi.shadowfil {
 #close:hover {
 	background: rgb(var(--gray));
 }
-.dis-none {
-	animation: disNoneFade 0.2s forwards;
-}
 #bg-close {
 	bottom: calc(5px - (1vw / -1.2));
 	right: calc(5px - (1vw / -1.2));
@@ -622,32 +623,12 @@ table td:nth-child(2) {
 
 /* Animations */
 
-@keyframes bodyFade {
-	from {
-		background-color: #fff;
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
 @keyframes starterScroll {
 	from {
 		background-position: 0 0;
 	}
 	to {
 		background-position: 0 900px;
-	}
-}
-@keyframes disNoneFade {
-	0% {
-		transform: translate(0);
-		opacity: 1;
-	}
-	100% {
-		transform: translate(0, 50px);
-		opacity: 0;
-		visibility: hidden;
 	}
 }
 
