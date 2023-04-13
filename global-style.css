@@ -1,4 +1,4 @@
-﻿@import "https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Comfortaa&display=swap";
 
 :root {
@@ -197,9 +197,6 @@ a:active, #copyButton:active {
 .pos-fix {
 	position: fixed;
 }
-.pos-stk {
-	position: sticky;
-}
 .pos-rel {
 	position: relative;
 }
@@ -255,28 +252,6 @@ a:active, #copyButton:active {
 	flex-wrap: wrap;
 }
 
-/* Overflows */
-
-.nowrap {
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-.ovf-hid {
-	overflow: hidden;
-}
-.ovfx-auto {
-	overflow-x: auto;
-}
-.ovfx-hid {
-	overflow-x: hidden;
-}
-.ovfy-hid {
-	overflow-y: hidden;
-}
-.ovwrap-normal {
-	overflow-wrap: normal;
-}
-
 /* Margins */
 
 .mar-center {
@@ -300,12 +275,6 @@ a:active, #copyButton:active {
 }
 .hei-full {
 	height: 100%;
-}
-.wid-auto {
-	width: auto;
-}
-.hei-auto {
-	height: auto;
 }
 .wid-50 {
 	width: 50%;
@@ -440,9 +409,6 @@ a.kofi.shadowfil {
 }
 a:active.kofi.shadowfil {
 	filter: drop-shadow(0 3px 2px rgba(var(--black), 0.35));
-}
-.hide-mobile {
-	display: block;
 }
 
 /* Cursors */
@@ -653,9 +619,6 @@ table td {
 table td:nth-child(2) {
 	background: rgba(var(--white), 0.2);
 }
-.show-if-mobile {
-	display: none;
-}
 
 /* Animations */
 
@@ -674,16 +637,6 @@ table td:nth-child(2) {
 	}
 	to {
 		background-position: 0 900px;
-	}
-}
-@keyframes fadeScrollUp {
-	from {
-		opacity: 0;
-		transform: translate(0, 180px);
-	}
-	to {
-		opacity: 1;
-		transform: translate(0);
 	}
 }
 @keyframes disNoneFade {
@@ -709,9 +662,6 @@ table td:nth-child(2) {
 	section.sub {
 		width: 100%;
 	}
-	.mob-pad {
-		padding: 2em;
-	}
 	.dis-flex.fldir-row.recolumn-if-mobile, .dis-flex.fldir-rerow.recolumn-if-mobile {
 		flex-direction: column-reverse;
 	}
@@ -720,9 +670,6 @@ table td:nth-child(2) {
 	}
 	.kofi {
 		margin-right: auto;
-	}
-	.hide-when-mobile {
-		display: none;
 	}
 }
 @media screen and (max-width: 1000px) {
@@ -742,14 +689,6 @@ table td:nth-child(2) {
 		bottom: 0;
 		right: 0;
 		border-radius: 0;
-	}
-}
-@media screen and (max-width: 600px) {
-	.cllps.hide-if-mobile {
-		display: none;
-	}
-	.show-if-mobile {
-		display: block;
 	}
 }
 @media screen and (max-width: 530px) {
