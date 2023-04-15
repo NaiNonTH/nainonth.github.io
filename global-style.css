@@ -674,7 +674,7 @@ table td:nth-child(2) {
 	}
 }
 @media screen and (max-width: 1000px) {
-	.box-content, table, proj-list {
+	.box-content, table, .proj-list {
 		width: 100%;
 	}
 	.box-content {
