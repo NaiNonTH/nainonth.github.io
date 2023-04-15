@@ -519,6 +519,10 @@ a:active.kofi.shadowfil {
 	width: 384px;
 	height: 216px;
 }
+.proj-list {
+	width: 1000px;
+	margin-bottom: 1em;
+}
 .project-sels .desc {
 	bottom: 0;
 	padding: 1.5em 0;
@@ -670,7 +674,7 @@ table td:nth-child(2) {
 	}
 }
 @media screen and (max-width: 1000px) {
-	.box-content, table {
+	.box-content, table, proj-list {
 		width: 100%;
 	}
 	.box-content {
