@@ -521,6 +521,7 @@ a:active.kofi.shadowfil {
 }
 .proj-list {
 	width: 1000px;
+	overflow: hidden;
 	margin-bottom: 1em;
 }
 .project-sels .desc {
