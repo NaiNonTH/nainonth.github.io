@@ -65,7 +65,7 @@ nav a {
 	position: relative;
 	background: transparent;
 }
-nav a:hover {
+nav a:hover:not(.menu a:hover) {
 	background: rgb(255, 255, 255, 0.15);
 }
 nav a:active {
@@ -95,6 +95,22 @@ nav .avatar {
 	height: 100px;
 	left: -25px;
 	transition: 0.2s;
+}
+.menu {
+	visibility: hidden;
+	position: absolute;
+	z-index: -1;
+	top: 100%;
+	overflow: hidden;
+	padding: 0 1em;
+	width: 0;
+	height: 0;
+	transition: 0.2s ease-out;
+}
+.menu.active {
+	visibility: visible;
+	width: 300px;
+	height: 200px;
 }
 footer hr {
 	width: 10%;
