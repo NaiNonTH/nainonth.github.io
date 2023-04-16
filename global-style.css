@@ -61,21 +61,29 @@ nav {
 	width: 90%;
 	transition: 0.2s;
 }
+nav button {
+	background: none;
+	border: none;
+	padding: 0;
+	font-family: inherit;
+	cursor: default;
+	transition: 0.2s;
+}
 nav a {
 	position: relative;
 	background: transparent;
 }
-nav a:hover:not(.menu a:hover) {
+nav a:hover:not(.menu a:hover), nav button:hover {
 	background: rgb(255, 255, 255, 0.15);
 }
-nav a:active {
+nav a:active:not(.menu a:active) {
 	background: rgb(255, 255, 255, 0.35);
 }
 .tooltip {
 	position: absolute;
 	font-size: 14px;
 }
-nav a .tooltip, nav .selected .tooltip {
+nav a .tooltip, nav .selected .tooltip, nav button .tooltip, nav .selected .tooltip {
 	visibility: hidden;
 	overflow: hidden;
 	padding: 0;
@@ -85,7 +93,7 @@ nav a .tooltip, nav .selected .tooltip {
 	height: 0;
 	transition: 0.15s;
 }
-nav a:hover .tooltip, nav .selected .tooltip {
+nav a:hover .tooltip, nav button:hover .tooltip, nav .selected .tooltip {
 	visibility: visible;
 	padding: 0.6em;
 	height: 14px;
@@ -96,21 +104,24 @@ nav .avatar {
 	left: -25px;
 	transition: 0.2s;
 }
-.menu {
+nav button.cllps .menu {
 	visibility: hidden;
+	opacity: 0;
 	position: absolute;
+	font-family: var(--header-font);
+	font-size: 18px;
 	z-index: -1;
-	top: 100%;
+	top: 95%;
+	width: auto;
+	height: auto;
 	overflow: hidden;
 	padding: 0 1em;
-	width: 0;
-	height: 0;
-	transition: 0.2s ease-out;
+	transition: 0.2s;
 }
-.menu.active {
+nav button.cllps:hover .menu {
 	visibility: visible;
-	width: 300px;
-	height: 200px;
+	opacity: 1;
+	top: 105%;
 }
 footer hr {
 	width: 10%;
@@ -167,7 +178,7 @@ a:hover, #copyButton:hover {
 	transform: translate(0, -2px);
 	color: rgb(var(--dark-cyan));
 }
-a:active, #copyButton:active {
+a:active , #copyButton:active {
 	transform: translate(0, 1px);
 }
 .avatar {
