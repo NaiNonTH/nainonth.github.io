@@ -2,6 +2,7 @@
 
 ## Status
 [![pages-build-deployment](https://github.com/NaiNonTH/nainonth.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/NaiNonTH/nainonth.github.io/actions/workflows/pages/pages-build-deployment)
+[![CodeFactor](https://www.codefactor.io/repository/github/nainonth/nainonth.github.io/badge)](https://www.codefactor.io/repository/github/nainonth/nainonth.github.io)
 
 ## Description
 
