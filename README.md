@@ -1,7 +1,7 @@
 # NaiNonTheN00b1's Official Website (nainonth.github.io)
 
 ## Status
-[![pages-build-deployment](https://github.com/NaiNonTH/nainonth.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/NaiNonTH/nainonth.github.io/actions/workflows/pages/pages-build-deployment)
+[![Deploy Jekyll with GitHub Pages dependencies preinstalled](https://github.com/NaiNonTH/nainonth.github.io/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/NaiNonTH/nainonth.github.io/actions/workflows/jekyll-gh-pages.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/nainonth/nainonth.github.io/badge)](https://www.codefactor.io/repository/github/nainonth/nainonth.github.io)
 
 ## Description
