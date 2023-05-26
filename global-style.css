@@ -480,7 +480,7 @@ a:active.kofi.shadowfil {
 	padding: 0.5em;
 }
 .projects .tooltip {
-	border-radius: 10px 10px 0 10px;
+	border-radius: 10px 10px 0;
 	bottom: calc(35px + (1vw / 1.2));
 	right: calc(60px + (1vw / 1.2));
 	padding: 0.6em;
