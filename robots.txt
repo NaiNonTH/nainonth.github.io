@@ -1,6 +1,2 @@
 User-agent: *
 Disallow: /index
-Allow: /about
-Allow: /projects
-Allow: /tou
-Sitemap: https://nainonth.github.io/sitemap.xml
