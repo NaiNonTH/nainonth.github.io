@@ -750,6 +750,7 @@ blockquote,
 .card,
 .scrollbar .cursor,
 .blog img,
+.tags > *,
 :not(header) [avt],
 [step],
 #themes {
