@@ -1,8 +1,11 @@
-const htr = document.getElementById("parallax");
+const htr = document.querySelectorAll("#parallax");
+htr.forEach(e => {
 window.onscroll = function(){
-const rect = htr.getBoundingClientRect();
+const rect = e.getBoundingClientRect();
 const hei = rect.height;
 const scr = window.scrollY;
+const ofs = parseFloat(e.getAttribute("data-offset"));
 if (window.innerWidth >= 850 && scr < hei) {
-htr.style.transform = "translate3d(0, " + scr * 0.6 + "px, 0)";
+e.style.transform = "translate3d(0, " + scr * ofs + "px, 0)";
 }}
+})

@@ -122,7 +122,7 @@ function avatar(){
 		hAvt.classList.add("christmas");
 	}
 	else {
-		hAvt.className = null;
+		hAvt.className = "";
 	}
 }
 avatar();
