@@ -100,11 +100,11 @@ function bdLoad(){
 	body.className = "loaded";
 }
 const body = document.querySelector("body");
-setTimeout(function(){
+setTimeout(() => {
 	body.classList.add("transparent");
 }, 1)
 body.onclick = bdLoad;
-setTimeout(bdLoad, 1000);
+setTimeout(bdLoad, 1000)
 
 const dmy = new Date();
 const date = dmy.getDate();
@@ -118,7 +118,7 @@ function avatar(){
 	else if (mnth == 9 && date == 31){
 		hAvt.classList.add("halloween");
 	}
-	else if (mnth == 11 && 24 < date <= 31) {
+	else if (mnth == 11 && 24 < date && date <= 31) {
 		hAvt.classList.add("christmas");
 	}
 	else {

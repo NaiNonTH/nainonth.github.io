@@ -171,10 +171,14 @@
 	</body>
 	<script src="js/global.js"></script>
 	<script>
-		const id = document.getElementById("age");
+		const ageOutput = document.getElementById("age")
 		
-		const age = year - 2005
-		id.innerText = age;
+		const birthday = new Date("2005/3/21")
+		const ageDiff = new Date(dmy - birthday)
+		const ageYear = ageDiff.getFullYear()
+		const age = Math.abs(ageYear - 1970)
+		
+		ageOutput.innerText = age
 	</script>
 	<script src="https://kit.fontawesome.com/32ab677c04.js" crossorigin="anonymous"></script>
 </html>

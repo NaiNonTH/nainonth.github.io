@@ -1,6 +1,3 @@
-body {
-	padding-right: 6px;
-}
 .blog {
 	width: min(100%, 1250px);
 	grid-template-columns: 25% 75%;
