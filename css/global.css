@@ -589,7 +589,8 @@ a.button,
 .bg-secondary,
 .bg-darker-secondary,
 nav a[role="button"]::after,
-nav a::before {
+nav a::before,
+[step] {
 	color: var(--inside-secondary);
 }
 .cl-fff,
