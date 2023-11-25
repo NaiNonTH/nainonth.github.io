@@ -1,19 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Moved | NaiNonTheN00b1</title>
-    <link rel="stylesheet" href="site.css">
-    <link rel="canonical" href="https://nainonth.github.io">
-</head>
-<body>
-	<div class="avatar"></div>
-	<h1>My main website has been moved.</h1>
-	<p>Check out my new website here:</p>
-	<div>
-		<a href="https://mypsd.dev" class="button">mypsd.dev</a>
-	</div>
-	<p><a href="https://github.com/NaiNonTH/nainonth.github.io/tree/main/legacy">Legacy Source</a></p>
-</body>
+<html lang="en" foxified-44>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="og:title" content="NaiNonTheN00b1's Website">
+		<meta name="og:url" content="https://nainonth.github.io">
+		<meta name="description" content="Meet NaiNonTheN00b1 and discover all projects he made.">
+		<link id="icon" rel="icon">
+		<link rel="stylesheet" href="css/global.css">
+		<link id="themesheet" rel="stylesheet">
+		<title>Intro | NaiNonTheN00b1</title>
+		<style>
+			.linkbtn .button {
+				padding-bottom: .4em;
+			}
+			.button.kofi {
+				background: #29ABDF;
+				border-color: #FFF;
+			}
+			.button.promptpay:is(:hover, :not(:hover)) {
+				background: #FFF;
+				border-color: #003D6A;
+			}
+			.sub.intro h2 {
+				font-size: clamp(190%, 15vw, 325%);
+			}
+			.card {
+				margin: 1em;
+				background: var(--darker-primary);
+				width: min(90vw, 300px);
+				aspect-ratio: 3 / 4;
+			}
+			.card:hover {
+				transform: translateY(-7px);
+				box-shadow: 0 7px 0 0 #999999;
+			}
+			.card .ovl {
+				overflow-y: auto;
+				padding: 1.3em .3em;
+				background: linear-gradient(-60deg, #FFFFFFB7 0% 20%, #FFFFFFCF 35% 55%, #FFFFFFB7 55% 100%);
+			}
+			.card:hover .ovl {
+				-webkit-backdrop-filter: blur(5px);
+				backdrop-filter: blur(5px);
+			}
+			.card .ovl h2 {
+				font-size: clamp(150%, 12vw, 250%) !important;
+			}
+			.card .ovl p {
+				font-size: clamp(90%, 10vw, 110%);
+			}
+			.limit {
+				bottom: -10px;
+				left: 0;
+				height: 50px;
+				background: linear-gradient(transparent, var(--primary));
+			}
+			@media screen and (max-width: 1250px) {
+				.intro.flex.row {
+					flex-direction: column;
+				}
+				.intro.sub {
+					text-align: center;
+					padding: 2em 1em;
+				}
+			}
+			@media screen and (max-width: 950px) {
+				.promptpay .tooltip {
+					display: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div avt></div>
+			<div class="nav-hid" title="Hide Navigation Bar"></div>
+			<div class="settings">
+				<button title="Open Settings" id="extend">
+					<svg width="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M29.4 13.3h-3.1a9 9 0 0 0-1.1-2.7l2.1-2.2a2.5 2.5 0 0 0 0-3.7 2.5 2.5 0 0 0-3.7 0l-2.2 2.1a9 9 0 0 0-2.7-1.1V2.6A2.7 2.7 0 0 0 16 0a2.7 2.7 0 0 0-2.7 2.6v3.1a9 9 0 0 0-2.7 1.1L8.4 4.7a2.5 2.5 0 0 0-3.7 0 2.5 2.5 0 0 0 0 3.7l2.1 2.2a9 9 0 0 0-1.1 2.7H2.6A2.7 2.7 0 0 0 0 16a2.7 2.7 0 0 0 2.6 2.7h3.1a9 9 0 0 0 1.1 2.7l-2.1 2.2a2.5 2.5 0 0 0 0 3.7 2.5 2.5 0 0 0 3.7 0l2.2-2.1a9 9 0 0 0 2.7 1.1v3.1A2.7 2.7 0 0 0 16 32a2.7 2.7 0 0 0 2.7-2.6v-3.1a9 9 0 0 0 2.7-1.1l2.2 2.1a2.5 2.5 0 0 0 3.7 0 2.5 2.5 0 0 0 0-3.7l-2.1-2.2a9 9 0 0 0 1.1-2.7h3.1A2.7 2.7 0 0 0 32 16a2.7 2.7 0 0 0-2.6-2.7Zm-13.4 8a5.3 5.3 0 1 1 5.3-5.3 5.3 5.3 0 0 1-5.3 5.3Z" fill="var(--inside-secondary)"/></svg>
+				</button>
+				<div class="menu">
+					<div id="themes"></div>
+				</div>
+			</div>
+			<nav>
+				<div data-type="Intro" class="selected">
+					<svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 29"><path style="stroke:none;fill-rule:nonzero;fill:var(--selected);fill-opacity:1" d="M31.965 14.86c0 .769-.637 1.39-1.422 1.39h-2.629v10.57c0 1.207-1.281 2.18-2.844 2.18h-4.5v-9.969h-9V29h-4.5c-1.562 0-2.84-.973-2.84-2.18V16.25H1.457a1.44 1.44 0 0 1-1.02-.418 1.355 1.355 0 0 1-.414-.988c.004-.371.165-.727.438-.98L15.027.393a1.424 1.424 0 0 1 1.946 0l14.566 13.47c.266.265.422.62.426.995Zm0 0"/></svg>
+				</div>
+				<a href="about" title="About" data-type="About">
+					<svg width="18px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 49"><path style="stroke:none;fill-rule:nonzero;fill:var(--inside-secondary);fill-opacity:1" d="M16 21.195c8.836 0 16 7.07 16 15.79v11.94H0v-11.94c0-8.72 7.164-15.79 16-15.79Zm10.152-11.14C26.152 4.52 21.605.035 16 .035c-5.605 0-10.152 4.485-10.152 10.02 0 5.53 4.547 10.015 10.152 10.015 5.605 0 10.152-4.484 10.152-10.015Zm0 0"/></svg>
+				</a>
+				<a role="button" id="projects" title="Projects" data-type="Projects">
+					<svg width="42px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path style="fill:none;stroke-width:12;stroke-linecap:butt;stroke-linejoin:miter;stroke:var(--inside-secondary);stroke-opacity:1;stroke-miterlimit:10" d="M.001-.003c0 32.402 20.654 44.853 45.762 44.853" transform="matrix(.13333 0 0 -.13333 10.605 13.851)"/><path style="stroke:none;fill-rule:nonzero;fill:var(--inside-secondary);fill-opacity:1" d="M18.07 20.203c.309-.637.489-1.422.489-2.27 0-2.136-1.149-3.867-2.559-3.867-1.41 0-2.559 1.73-2.559 3.868 0 .847.18 1.632.489 2.27a7.268 7.268 0 0 1-5.196-6.97A7.264 7.264 0 0 1 16 5.97a7.264 7.264 0 0 1 7.266 7.265 7.268 7.268 0 0 1-5.196 6.97M16 4.151a9.082 9.082 0 0 0-9.082 9.082c0 4.067 2.672 7.508 6.355 8.668v.93h1.98a.41.41 0 1 1 0 .82h-1.98v2.266a1.94 1.94 0 0 0 1.93 1.93h1.594a1.934 1.934 0 0 0 1.926-1.883h-1.715a.408.408 0 0 1-.41-.41c0-.227.18-.41.41-.41h1.719v-3.243c3.683-1.16 6.355-4.601 6.355-8.668A9.082 9.082 0 0 0 16 4.152"/></svg>
+				</a>
+				<a href="docs/terms-of-use" title="Terms of Use" data-type="Terms">
+					<svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 45"><path style="stroke:none;fill-rule:nonzero;fill:var(--inside-secondary);fill-opacity:1" d="m31.531 32.668-11.52.023v11.41l11.571-11.41"/><path style="stroke:none;fill-rule:nonzero;fill:var(--inside-secondary);fill-opacity:1" d="M0 0v45h18.953V31.621H32V0Zm23.656 18.828c-.027.145-.074.29-.097.438a11.088 11.088 0 0 1-4.286 5.64 10.639 10.639 0 0 1-3.37 1.485c-3.442-1-6.184-3.582-7.36-6.93-.07-.16-.129-.32-.172-.488-.422-1.313-1.012-4.282-.05-10.047a12.844 12.844 0 0 0 5.292-1.215c.852-.41 1.653-.914 2.387-1.508a10.324 10.324 0 0 0 2.414 1.629A11.58 11.58 0 0 0 23.68 9c.687 3.242.68 6.59-.024 9.828Zm0 0"/></svg>
+				</a>
+				<a href="https://linktr.ee/NaiNonTheN00b1" target="_blank" title="Linktree" data-type="Links">
+					<svg width="50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 23"><path style="stroke:none;fill:var(--inside-secondary);fill-opacity:1" d="M14.82 14.43h2.41v5.539h-2.41v-5.54"/><path style="stroke:none;fill:var(--inside-secondary);fill-opacity:1" d="M9.254 8.758h4.09L10.43 5.934l1.605-1.672 2.774 2.902V3.035h2.406V7.16l2.773-2.898 1.606 1.672-2.914 2.824h4.093v2.332h-4.12l2.929 2.902-1.605 1.637L16 11.555l-3.977 4.074-1.605-1.637 2.926-2.902H9.227V8.758h.027"/></svg>
+				</a>
+			</nav>
+			<section class="menu">
+				<button id="closeHeaderMenu" title="Close Menu"><i class="fa-solid fa-xmark"></i></button>
+				<article>
+					<h3>Minecraft</h3>
+					<ul>
+						<li><a href="projects/minecraft/resource-packs">Resource Packs</a></li>
+						<li><a href="projects/minecraft/data-packs">Data Packs</a></li>
+					</ul>
+				</article>
+				<div class="vl solid"></div>
+				<article>
+					<h3>Webapps</h3>
+					<ul>
+						<li><a href="https://nainonth.github.io/Bmi-Calc">BMI-Calc</a></li>
+					</ul>
+				</article>
+			</section>
+		</header>
+		<main>
+			<section class="header intro flex ali-i-ctr">
+				<div class="ovl"></div>
+				<article class="sub intro plain flex column">
+					<h1>Meet NaiNonTheN00b1</h1>
+					<p>...and discover all projects he made.</p>
+				</article>
+				<img id="parallax" data-offset="0.6" alt="An Extreme Minecraft Savanna Mountain" draggable="false" src="img/bg/extreme.webp">
+			</section>
+			<section class="dif">
+				<section>
+					<section class="sub intro flex row jus-gap ali-i-ctr" style="gap: 3rem;">
+						<article><div avt></div></article>
+						<article>
+							<h2 class="mar-0">Since 2021...</h2>
+							<p>NaiNonTheN00b1 has been working on creating ideas — mostly related to Minecraft, aiming for the better user experience and to improve his skills.</p>
+							<a class="button" href="about" title="About | NaiNonTheN00b1">More About Me</a>
+						</article>
+					</section>
+				</section>
+				<section class="rel">
+					<section class="sub intro flex column jus-gap ali-i-ctr txt-ctr">
+						<p>See <span class="highlighted">Highlighted</span> successful projects</p>
+						<p class="fnt-sz-sub op-hf anim-updown">Try hovering/touching some of them!</p>
+						<section id="withMaxHeight" class="rel flex wrap row jus-ctr c-darker-secondary" style="max-height: 900px;">
+							<div class="card">
+								<img src="./img/logo/foliage.webp" alt="Foliage+ logo" width="90%" class="shdw">
+								<div class="ovl">
+									<section>
+										<h2 class="mar-0">Foliage+</h2>
+										<p>Foliage+ aims to enhance the look of Minecraft's vegetation and natural beauty.</p>
+										<a class="button" href="https://modrinth.com/resourcepack/foliage+">Learn More</a>
+									</section>
+								</div>
+								<img src="./img/bg/foliage-bg.webp" alt="Foliage+ background card" class="bg">
+							</div>
+							<div class="card" style="background: #252525;">
+								<img src="./img/logo/improved-fences.webp" alt="Improved Fences logo" width="90%">
+								<div class="ovl">
+									<section>
+										<h2 class="mar-0">Improved Fences</h2>
+										<p>Improved Fences beautifies Minecraft Fences and Gates to adapt better to various creations.</p>
+										<a class="button" href="https://modrinth.com/resourcepack/improved-fences">Learn More</a>
+									</section>
+								</div>
+							</div>
+							<div class="card">
+								<img src="./img/logo/faithful-leaves.webp" alt="Bushy Leaves for Faithful 32x logo" width="60%" class="shdw">
+								<div class="ovl">
+									<section>
+										<h2 class="mar-0">Bushy Leaves for Faithful</h2>
+										<p>Bushy Leaves for Faithful 32x improves the look of Faithful's leaves as bushy as real-life leaves.</p>
+										<a class="button" href="https://modrinth.com/resourcepack/bushy-leaves-for-faithful-32x">Learn More</a>
+									</section>
+								</div>
+								<img src="./img/bg/faithful-leaves-bg.webp" alt="Bushy Leaves for Faithful 32x background card" class="bg">
+							</div>
+							<div class="card">
+								<img src="./img/logo/foliage-tweaks.webp" alt="Foliage+ Tweaks logo" width="90%" class="shdw">
+								<div class="ovl">
+									<section>
+										<h2 class="mar-0">Foliage+ Tweaks</h2>
+										<p>Foliage+ Tweaks takes the goal of Foliage+ even further with new, unique features to vivify the Minecraft world.</p>
+										<a class="button" href="https://modrinth.com/resourcepack/foliage+-tweaks">Learn More</a>
+									</section>
+								</div>
+								<img src="./img/bg/foliage-tweaks-bg.webp" alt="Foliage+ Tweaks background card" class="bg">
+							</div>
+							<section class="abs limit wid-full grid mid cl-fff">
+								<i class="fa-solid fa-angles-down anim-updown"></i>
+							</section>
+						</section>
+						<a class="button" style="margin-top: 1em;" href="projects/minecraft/resource-packs" title="Resoruce Packs | NaiNonTheN00b1">View More</a>
+					</section>
+				</section>
+				<section>
+					<section class="sub intro flex row rev jus-aru ali-i-ctr" style="gap: 3rem;">
+						<article>
+							<img src="img/blog.svg" class="shdw" draggable="false" alt="Blog Picture" style="width: clamp(150px, 50vw, 300px)">
+						</article>
+						<article>
+							<h2 class="mar-0">Follow for More!</h2>
+							<p>Follow my projects updates and announcements mainly on my Ko-Fi page.</p>
+							<div class="flex wrap linkbtn" style="gap: 1em;">
+								<a class="button kofi" title="Support NaiNonTheN00b1 on Ko-fi! ♥..." href="https://ko-fi.com/nainonthen00b1"><img src="img/logo/ko-fi-button.webp" alt="Ko-Fi logo" height="32px" width="auto" draggable="false"></a>
+							</div>
+						</article>
+					</section>
+				</section>
+			</section>
+			<section class="support">
+				<section class="sub intro flex row jus-gap ali-i-ctr" style="gap: 3rem;">
+					<article class="rel mobile-hide">
+						<img class="shdw" draggable="false" width="180px" src="img/logo/ko-fi.webp" alt="Ko-Fi image">
+					</article>
+					<article>
+						<h2 class="mar-0">Buy me a Coffee <i class="fa-solid fa-mug-hot"></i></h2>
+						<p>Creating and developing each project is time-and-power-consuming. Therefore, donating can really motivate me to continue these projects.<br><br>I would really appreciate your support!</p>
+						<div class="flex wrap linkbtn" style="gap: 1em;">
+							<a class="button kofi" title="Support NaiNonTheN00b1 on Ko-fi! ♥..." href="https://ko-fi.com/nainonthen00b1"><img src="img/logo/ko-fi-button.webp" alt="Ko-Fi logo" height="32px" width="auto" draggable="false"></a>
+							<a class="button promptpay" title="Donate via PromptPay" role="button" id="showDialog" data-locate="promptpay">
+								<svg style="height: 32px; width: auto;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 644.45 215.15"><defs><style>.b212354b-461f-4502-a52d-fd77ff8a4ca0{fill:#003d6b;}</style></defs><g id="bf137c09-dfa1-40b5-8dc3-d0a51e5d08fb" data-name="Layer 2"><g id="afc82774-a91f-4c0a-8442-16c01336e268" data-name="Layer 1"><path class="b212354b-461f-4502-a52d-fd77ff8a4ca0" d="M413,39.5a4,4,0,0,1-2.73-.92A3.19,3.19,0,0,1,409.23,36a3.32,3.32,0,0,1,1.13-2.69,4.94,4.94,0,0,1,3.28-1,5.59,5.59,0,0,1,4,1.19,4.27,4.27,0,0,1,1.25,3.25v8.59l3.69-10h2.61l3.65,10V32.76h5.84V53.58h-5.88V53l-4.95-13.29-5,13.33v.56H413Zm1.67-2a2.62,2.62,0,0,0,0-3.13,1.75,1.75,0,0,0-1.32-.54,1.83,1.83,0,0,0-1.35.54,2.54,2.54,0,0,0,0,3.13,1.83,1.83,0,0,0,1.35.54A1.75,1.75,0,0,0,414.7,37.53Z"/><path class="b212354b-461f-4502-a52d-fd77ff8a4ca0" d="M451.07,53A3.36,3.36,0,0,1,450,50.31a3.13,3.13,0,0,1,1.09-2.47,4,4,0,0,1,2.71-1V43.83a5,5,0,0,0-.29-1.92A1.63,1.63,0,0,0,452.4,41a8.3,8.3,0,0,0-2.37-.25c-1,0-2.16,0-3.47.12s-2.41.17-3.25.3V39.39a7.05,7.05,0,0,1,1.84-5.18c1.23-1.24,3.3-1.86,6.19-1.86a8.49,8.49,0,0,1,1.54.13c.48.09.93.18,1.34.28a8.29,8.29,0,0,0,2.23.34,4.81,4.81,0,0,0,1.61-.26,4.92,4.92,0,0,0,1.54-1l1.58,2.45a5.39,5.39,0,0,1-3.62,1.39,9.25,9.25,0,0,1-1.51-.11c-.43-.08-.91-.19-1.44-.34a8.89,8.89,0,0,0-2.66-.42,3.71,3.71,0,0,0-3.72,4c1.43,0,2.47-.08,3.11-.08a21,21,0,0,1,4.73.42,4.42,4.42,0,0,1,2.63,1.61,5.83,5.83,0,0,1,.9,3.51v5.27q0,4.44-5.22,4.44A5,5,0,0,1,451.07,53Zm4.4-1.09a2.25,2.25,0,0,0,.52-1.58,2.11,2.11,0,0,0-.52-1.55,1.78,1.78,0,0,0-1.32-.53,1.86,1.86,0,0,0-1.35.53,2.07,2.07,0,0,0-.54,1.55,2.21,2.21,0,0,0,.54,1.58,1.81,1.81,0,0,0,1.35.56A1.73,1.73,0,0,0,455.47,51.93Z"/><path class="b212354b-461f-4502-a52d-fd77ff8a4ca0" d="M448.17,26.57a5.47,5.47,0,0,0,1.4-.66,5.76,5.76,0,0,0,1.29-1,3.1,3.1,0,0,1-2.43-1,3.33,3.33,0,0,1-.76-2.15,3.23,3.23,0,0,1,.92-2.3,3.68,3.68,0,0,1,2.8-1,4.37,4.37,0,0,1,3,1,3.13,3.13,0,0,1,1.07,2.41,3.85,3.85,0,0,1-.76,2.54,5.55,5.55,0,0,1-1.85,1.45c2.38-.15,4.07-.71,5.05-1.69a6.55,6.55,0,0,0,1.71-4.29h4.15a7.49,7.49,0,0,1-3.2,6,12.91,12.91,0,0,1-7.52,2h-4.91Zm4.3-3.48a2,2,0,0,0,.46-1.38,2,2,0,0,0-.46-1.37,1.58,1.58,0,0,0-1.23-.51,1.51,1.51,0,0,0-1.19.53,2.23,2.23,0,0,0,0,2.71,1.51,1.51,0,0,0,1.19.53A1.58,1.58,0,0,0,452.47,23.09Z"/><path class="b212354b-461f-4502-a52d-fd77ff8a4ca0" d="M472.87,44.13a3.84,3.84,0,0,1,1.29-2.9A5.42,5.42,0,0,1,478,40a5.22,5.22,0,0,1,3.35,1,3.62,3.62,0,0,1,.17,5.2,3.9,3.9,0,0,1-2.78,1v4.48h4.38a2.12,2.12,0,0,0,2.38-2.41V38.94a4.63,4.63,0,0,0-1.35-3.37,5.16,5.16,0,0,0-3.88-1.38,7.8,7.8,0,0,0-4,1,5.21,5.21,0,0,0-2.34,2.9h-2.11a7,7,0,0,1,3.24-4.18,12.32,12.32,0,0,1,6.52-1.54,13.42,13.42,0,0,1,7,1.64,5.45,5.45,0,0,1,2.71,5V49.1a4.28,4.28,0,0,1-1.23,3.45,5.69,5.69,0,0,1-3.73,1H472.87Zm6.84,1.08a2.15,2.15,0,0,0,.54-1.57,2.21,2.21,0,0,0-.54-1.58,1.77,1.77,0,0,0-1.34-.56,1.75,1.75,0,0,0-1.33.56,2.29,2.29,0,0,0-.51,1.58,2.23,2.23,0,0,0,.51,1.57,1.77,1.77,0,0,0,1.33.54A1.79,1.79,0,0,0,479.71,45.21Z"/><path class="b212354b-461f-4502-a52d-fd77ff8a4ca0" d="M522,32.76V53.58h-5.3a19.57,19.57,0,0,0-2.52-3.2,12.7,12.7,0,0,0-3.86-2.78v1.5A4.83,4.83,0,0,1,509,52.74,5.93,5.93,0,0,1,504.84,54a4.05,4.05,0,0,1-4.65-4.33,4.55,4.55,0,0,1,1-2.86,5,5,0,0,1,3.31-1.62V39.5a4,4,0,0,1-2.73-.92A3.19,3.19,0,0,1,500.66,36a3.32,3.32,0,0,1,1.13-2.69,4.94,4.94,0,0,1,3.28-1,5.59,5.59,0,0,1,4,1.19,4.27,4.27,0,0,1,1.25,3.25v8.92a14.38,14.38,0,0,1,3.54,1.87,10.58,10.58,0,0,1,2.3,2.13v-17Zm-17.81,19a2.56,2.56,0,0,0,.29-1.41V46.73a2.75,2.75,0,0,0-2.54,2.86,3.87,3.87,0,0,0,.39,1.83,1.13,1.13,0,0,0,1,.73A1,1,0,0,0,504.17,51.76Zm-.71-14.23a1.83,1.83,0,0,0,1.35.54,1.75,1.75,0,0,0,1.32-.54,2.62,2.62,0,0,0,0-3.13,1.75,1.75,0,0,0-1.32-.54,1.83,1.83,0,0,0-1.35.54,2.54,2.54,0,0,0,0,3.13Z"/><path class="b212354b-461f-4502-a52d-fd77ff8a4ca0" d="M535.49,52.7a5,5,0,0,1-1.19-3.52V32.76h5.84V47a4.3,4.3,0,0,1,2.75.84,3,3,0,0,1,1.05,2.47A3.36,3.36,0,0,1,542.79,53a5,5,0,0,1-3.3,1C537.62,54,536.28,53.54,535.49,52.7Zm5.61-.77a2.21,2.21,0,0,0,.54-1.58,2.07,2.07,0,0,0-.54-1.55,1.86,1.86,0,0,0-1.34-.53,1.8,1.8,0,0,0-1.33.53,2.11,2.11,0,0,0-.52,1.55,2.25,2.25,0,0,0,.52,1.58,1.75,1.75,0,0,0,1.33.56A1.8,1.8,0,0,0,541.1,51.93Z"/><path class="b212354b-461f-4502-a52d-fd77ff8a4ca0" d="M556.2,39.5a4,4,0,0,1-2.72-.92A3.2,3.2,0,0,1,552.4,36a3.35,3.35,0,0,1,1.13-2.69,5,5,0,0,1,3.29-1,5.61,5.61,0,0,1,4,1.19A4.27,4.27,0,0,1,562,36.79v8.59l3.69-10h2.62l3.65,10V32.76h5.84V53.58H572V53l-5-13.29L562,53v.56H556.2Zm1.68-2a2.66,2.66,0,0,0,0-3.13,1.77,1.77,0,0,0-1.33-.54,1.79,1.79,0,0,0-1.34.54,2.54,2.54,0,0,0,0,3.13,1.79,1.79,0,0,0,1.34.54A1.77,1.77,0,0,0,557.88,37.53Z"/><path class="b212354b-461f-4502-a52d-fd77ff8a4ca0" d="M587.14,46.73q0-2.86,3.53-4a6.41,6.41,0,0,1-2.78-2,5.25,5.25,0,0,1-1.1-3.37,4.54,4.54,0,0,1,1.54-3.79,6.77,6.77,0,0,1,4.3-1.22,5.78,5.78,0,0,1,3.44.9,2.89,2.89,0,0,1,1.25,2.45,3.41,3.41,0,0,1-1,2.6,4.09,4.09,0,0,1-2.92,1,6.83,6.83,0,0,1-.77-.08,1.94,1.94,0,0,0,1.17,1.71,5.45,5.45,0,0,0,2.48.55h2.23v2.45H596a2.75,2.75,0,0,0-2.26.88A3.27,3.27,0,0,0,593,47v4.67h5.07a2.53,2.53,0,0,0,2-.68,2.94,2.94,0,0,0,.61-2V32.76h5.85V49.29a5,5,0,0,1-.54,2.54,3.07,3.07,0,0,1-1.75,1.34,10.86,10.86,0,0,1-3.4.41H587.14Zm7-9.35a2.15,2.15,0,0,0,.54-1.57,2.21,2.21,0,0,0-.54-1.58,1.9,1.9,0,0,0-2.69,0,2.21,2.21,0,0,0-.54,1.58,2.15,2.15,0,0,0,.54,1.57,1.95,1.95,0,0,0,2.69,0Z"/><path class="b212354b-461f-4502-a52d-fd77ff8a4ca0" d="M598.66,27.81a3.88,3.88,0,0,1-1.11-3,3.62,3.62,0,0,1,1.34-3A12.51,12.51,0,0,1,602.7,20l1.34-.41a2.34,2.34,0,0,0,1.15-.77,1.71,1.71,0,0,0,.39-1h3.26c-.05,1.71-.73,2.78-2,3.2l-3.62,1.17a8.37,8.37,0,0,0-1,.45q-.48.27-.45.45a2.39,2.39,0,0,1,.85-.19,1.49,1.49,0,0,1,.38,0,2.44,2.44,0,0,1,1.73.92,3.15,3.15,0,0,1,.58,1.94A2.73,2.73,0,0,1,604.19,28a4,4,0,0,1-2.61.85A4.12,4.12,0,0,1,598.66,27.81Zm4.27-.92a1.81,1.81,0,0,0,.42-1.28,1.65,1.65,0,0,0-.42-1.19,1.49,1.49,0,0,0-1.08-.43,1.37,1.37,0,0,0-1,.43,1.68,1.68,0,0,0-.4,1.19,1.85,1.85,0,0,0,.4,1.28,1.31,1.31,0,0,0,1,.45A1.43,1.43,0,0,0,602.93,26.89Z"/><path class="b212354b-461f-4502-a52d-fd77ff8a4ca0" d="M463.18,115.29q-8.79,7-25.11,7H417.21V159.5H396.42V60.92h43q14.86,0,23.71,7.42t8.84,23Q472,108.27,463.18,115.29Zm-16-34.53q-4-3.2-11.14-3.19H417.21v28.22h18.86q7.17,0,11.14-3.44t4-10.93Q451.19,83.95,447.21,80.76Z"/><path class="b212354b-461f-4502-a52d-fd77ff8a4ca0" d="M511.76,102.61A31,31,0,0,0,519.4,101q4.13-1.69,4.12-5.27c0-2.91-1-4.91-3.16-6s-5.2-1.65-9.28-1.65q-6.87,0-9.73,3.25a13.24,13.24,0,0,0-2.72,6.5H480.19q.6-9.3,5.39-15.28,7.6-9.36,26.14-9.37a47.78,47.78,0,0,1,21.42,4.62q9.38,4.62,9.37,17.43v32.51q0,3.39.13,8.19.21,3.65,1.14,4.95A6.89,6.89,0,0,0,546.6,143v2.73H525.8a19.89,19.89,0,0,1-1.2-4q-.35-1.89-.54-4.29a38.94,38.94,0,0,1-9.18,7.09,28.48,28.48,0,0,1-14,3.44q-10,0-16.5-5.49t-6.51-15.57q0-13.08,10.47-18.93,5.74-3.18,16.9-4.55Zm11.69,8.65a21.28,21.28,0,0,1-3.7,1.79,32.74,32.74,0,0,1-5.14,1.27l-4.35.78a29.43,29.43,0,0,0-8.79,2.53A8.42,8.42,0,0,0,497,125.5c0,3.17.92,5.45,2.76,6.86a10.69,10.69,0,0,0,6.71,2.11A20.43,20.43,0,0,0,518,131q5.28-3.51,5.48-12.81Z"/><path class="b212354b-461f-4502-a52d-fd77ff8a4ca0" d="M606.32,72.78l-23.77,86.78H563.06l5.36-24.81-19-62h20.81l9,26.26L586,72.73Z"/><path class="b212354b-461f-4502-a52d-fd77ff8a4ca0" d="M637.45,7V208.15H7V7H637.45m7-7H0V215.15H644.45V0Z"/><path class="b212354b-461f-4502-a52d-fd77ff8a4ca0" d="M173.65,98.23q-7.83,0-11.38,5.93a27.31,27.31,0,0,0-3.55,14.3q0,8,3.55,13.41t11.29,5.36q8.48,0,11.63-6.37a31.47,31.47,0,0,0,3.16-14.19q0-7-2.28-11.47Q182.47,98.23,173.65,98.23Z"/><path class="b212354b-461f-4502-a52d-fd77ff8a4ca0" d="M313.4,98.52q-9,0-12.32,8.8a34.18,34.18,0,0,0-1.78,12,24.8,24.8,0,0,0,1.78,9.93q3.36,7.83,12.32,7.82a12.4,12.4,0,0,0,10.07-5q4-5,4-14.86a27.14,27.14,0,0,0-1.78-10.36Q322.35,98.51,313.4,98.52Z"/><path class="b212354b-461f-4502-a52d-fd77ff8a4ca0" d="M36.68,60.92v98.64h351V60.92Zm65.8,46.57q-5.13,6-15.7,6h-22v29.25H55.25V86.64h9.54v18.94H83.64q6.38,0,10.35-2.68t4-9.47q0-7.64-5.72-10.36a20.67,20.67,0,0,0-8.61-1.46H55.25V73.55H86.76q9.36,0,15.1,5.21t5.75,14.62A21.06,21.06,0,0,1,102.48,107.49Zm42.4-7.14c-.51-.09-1-.15-1.41-.19s-.9,0-1.41,0q-6.52,0-10,4.12a14.25,14.25,0,0,0-3.5,9.49v29H119.9V92.3h8.2V101c.67-1.69,2.32-3.76,4.94-6.19a12.93,12.93,0,0,1,9.06-3.65c.16,0,.43,0,.82,0l2,.18Zm46.48,36.23q-6,7.95-18.61,7.95-10.53,0-16.72-7t-6.18-18.9q0-12.7,6.52-20.23t17.52-7.53a23.22,23.22,0,0,1,16.66,6.49q6.81,6.49,6.81,19.11Q197.36,128.62,191.36,136.58ZM278,142.74h-9v-35q0-5-2.57-6.92a10.24,10.24,0,0,0-6.25-1.89,12.53,12.53,0,0,0-8.75,3.35q-3.67,3.35-3.67,11.16v29.34h-8.78V109.82q0-5.13-1.24-7.49c-1.32-2.35-3.76-3.53-7.34-3.53a12.75,12.75,0,0,0-8.89,3.72q-4,3.72-4,13.47v26.75h-8.63V92.3h8.54v7.16A28.39,28.39,0,0,1,223,94a17,17,0,0,1,9.68-2.87q6.15,0,9.88,3a15.45,15.45,0,0,1,3.84,5,18.55,18.55,0,0,1,6.76-6,19.15,19.15,0,0,1,8.72-2q10.36,0,14.1,7.35,2,3.95,2,10.64ZM327.55,140a20.18,20.18,0,0,1-13,4.48,18,18,0,0,1-9.77-2.5,22.46,22.46,0,0,1-5.16-4.85v18.22H291V92.53h8.44v6.69a20.8,20.8,0,0,1,5.68-5.32,18.54,18.54,0,0,1,10.28-2.83,19.52,19.52,0,0,1,14.86,6.57q6.11,6.57,6.1,18.77Q336.36,132.9,327.55,140ZM366,99.22h-8.2v32.92c0,1.76.61,2.94,1.82,3.54a8,8,0,0,0,3.36.51l1.34,0q.72,0,1.68-.15v6.73a19.2,19.2,0,0,1-3.09.61,29,29,0,0,1-3.48.19q-6,0-8.2-3a13.29,13.29,0,0,1-2.15-7.89V99.22h-7V92.3h7V78.22h8.72V92.3H366Z"/></g></g></svg>
+							</a>
+						</div>
+					</article>
+				</section>
+			</section>
+		</main>
+		<div class="mod-img">
+			<dialog id="promptpay">
+				<img src="img/promptpay.jpg" alt="QR-code of PromptPay">
+				<form method="dialog">
+					<button title="Close this dialog"><i class="fa-solid fa-xmark h3"></i></button>
+				</form>
+			</dialog>
+		</div>
+		<footer>
+			<section class="link">
+				<div>
+					<h3>Documents</h3>
+					<ul>
+						<li><a href="docs/index">Docs Intro</a></li>
+						<li><a href="docs/terms-of-use">Terms of Use</a></li>
+						<li><a href="docs/privacy">Privacy Policy</a></li>
+						<li><a href="docs/contact">Contact</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3>Interaction</h3>
+					<ul>
+						<li><a role="button" id="copyBtn" data-copyThis="discord">Discord</a></li>
+						<li><a href="https://ko-fi.com/nainonthen00b1" target="_blank">Ko-Fi</a></li>
+						<li><a href="https://www.planetminecraft.com/member/nainonthen00b1" target="_blank">Planet Minecraft</a></li>
+						<li><a href="https://modrinth.com/user/NaiNonTheN00b1" target="_blank">Modrinth</a></li>
+						<li><a href="https://legacy.curseforge.com/members/nainonthen00b1/projects" target="_blank">Curseforge</a></li>
+						<li><a href="https://github.com/NaiNonTH/" target="_blank">GitHub</a></li>
+					</ul>
+					<p id="discord">NaiNonTheN00b1#3679</p>
+				</div>
+				<div>
+					<h3>About Site</h3>
+					<ul>
+						<li><a href="https://github.com/NaiNonTH/nainonth.github.io/issues" class="issue" target="_blank">Report Issue</a>
+						<li><a href="https://nainonth.wixsite.com/nainonthen00b1" target="_blank">Old Website (Wix)</a></li>
+					</ul>
+				</div>
+			</section>
+			<div class="hr"></div>
+			<span id="copyrightYear"></span>
+			<span><strong>Do not Redistribute, unless other specified.</strong></span>
+			<span class="sign">Created by NaiNonTheN00b1</span>
+		</footer>
+		<noscript>
+			<article>
+				<div>
+					<h1>Alert!</h1>
+					<h2>Unable to access to <u>JavaScript</u></h2>
+					<p>This website requires JavaScript for various keyfeatures of the website to work, such as...</p>
+					<blockquote>
+						<ul class="re-txt ctr">
+							<li><p>Fade-out Removal (You won't be able to interact anything without this.)</p></li>
+							<li><p>Theme Usage and Color Scheme detection</p></li>
+							<li><p>Click-to-Copy Button</p></li>
+							<li><p>Parallax background effect</p></li>
+							<li><p>Icons</p></li>
+							<li><p>...and much more!</p></li>
+						</ul>
+					</blockquote>
+					<p>Please allow JavaScript to continue.</p>
+				</div>
+			</article>
+		</noscript>
+	</body>
+	<script src="js/global.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/dialog.js"></script>
+	<script>
+		if (navigator.userAgent.indexOf("Firefox") > 0){
+		document.getElementsByTagName('head')[0].insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="css/fflmt.css">');
+		}
+	</script>
+	<script>
+		const border = document.querySelector(".limit");
+		const eleMaxHei = document.getElementById("withMaxHeight");
+		const eleMaRect = eleMaxHei.getBoundingClientRect();
+		if (eleMaRect.height >= 900) {
+			border.style.display = null;
+		}
+		else if (eleMaRect.height < 900) {
+			border.style.display = "none";
+		}
+		border.onclick = () => {
+			border.style.display = "none";
+			eleMaxHei.style.maxHeight = null;
+		}
+	</script>
+	<script src="https://kit.fontawesome.com/32ab677c04.js" crossorigin="anonymous"></script>
 </html>

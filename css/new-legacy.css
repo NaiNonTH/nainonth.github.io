@@ -1,0 +1,7 @@
+@import url("legacy.css");
+:root {
+	--primary: #FAEAD7;
+	--secondary: #372910;
+	--darker-primary: #C5A57E;
+	--darker-secondary: #271C09;
+}
