@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@500&display=swap");
+
+html {
+	font-size: 24px;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+	background: #252525;
+	color: #efefef;
+
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	min-height: 100vh;
+	margin: 0;
+}
+h1 {
+	font-family: "Ubuntu", sans-serif;
+}
+a:not(.button) {
+	font-size: .75em;
+	color: inherit;
+}
+.avatar {
+	margin: 0 auto;
+	border-radius: 50%;
+	background: url(avatar.webp);
+	background-size: contain;
+	width: 90%;
+	aspect-ratio: 1 / 1;
+	max-width: 10rem;
+}
+.button {
+	display: inline-block;
+	margin: 0 auto;
+
+	background: #454270;
+	color: #efefef;
+	border: 3px solid #9D9AC4;
+	text-decoration: none;
+	padding: .7rem 1rem;
+	transition: transform .1s ease-out, filter .1s, border .2s;
+	border-radius: 99px;
+}
+.button::after {
+	content: "";
+	inset: 0;
+	background: linear-gradient(-60deg,transparent 0% 20%, #FFFFFF30 50%, transparent 80% 100%);
+	transform: translate(-100%);
+}
+.button:hover {
+	border-color: #FFF;
+}
+.button:hover::after {
+	animation: shineBtn .5s linear;
+}
+.button:active {
+	transform: scale(.98);
+	filter: drop-shadow(0 0 0 #00000020);
+}
